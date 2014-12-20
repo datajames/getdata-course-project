@@ -14,3 +14,5 @@ UCI HAR Dataset/features.txt
 *.txt
 
 .Rhistory
+
+CodeBook.html
