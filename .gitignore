@@ -1,0 +1,16 @@
+
+getdata-projectfiles-UCI HAR Dataset.zip
+
+Human+Activity+Recognition+Using+Smartphones.html
+
+tidy_dataset.txt
+
+UCI HAR Dataset/activity_labels.txt
+
+UCI HAR Dataset/features_info.txt
+
+UCI HAR Dataset/features.txt
+
+*.txt
+
+.Rhistory
