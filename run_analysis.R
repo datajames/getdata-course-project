@@ -87,4 +87,4 @@ newDataSet <- melt(allObs,id.vars = c("subjectid","activityLabel"))
 newDataSet <- dcast(newDataSet,subjectid+activityLabel ~ variable, fun.aggregate=mean)
 
 # this gives our new independed data set with summary information for each varilable for each activity and subject
-write.table(newDataSet, './tidy_dataset.txt',row.names=TRUE,sep='\t');
+write.table(newDataSet, './tidy_dataset.txt',row.names=FALSE,sep='\t');
