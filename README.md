@@ -56,5 +56,5 @@ You will need to have the reshape2 and plyr packages installed and then simply r
 
 * download the data set
 * unzip it
-* perform the transformations needed
+* perform the transformations needed (as described in the code book)
 * output a text file tidy_dataset.txt in the same directory with the final results
