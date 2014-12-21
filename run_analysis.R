@@ -4,6 +4,15 @@ rm(list=ls())
 require(plyr)
 require(reshape2)
 
+# get the data file and unzip it, although first check to see if it is already there
+
+#Check to see if the file already exists, if it does not download it
+if (!file.exists("./getdata-projectfiles-UCI HAR Dataset.zip")) {
+  fileURL <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
+  download.file(fileURL, destfile='./getdata-projectfiles-UCI HAR Dataset.zip', method = 'curl')
+  unzip('./getdata-projectfiles-UCI HAR Dataset.zip')
+}
+
 # 1. Merge the training and the test sets to create one data set
 
 ## load X test data abnd bind together, then add the feature names
