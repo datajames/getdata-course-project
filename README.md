@@ -21,6 +21,7 @@ Uses descriptive activity names to name the activities in the data set
 Appropriately labels the data set with descriptive variable names. 
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+
 ## Completed work
 
 The file [run_analysis.R](run_analysis.R) contains the complete code to reproduce the tidy data set including downloading of the original data. 
@@ -46,3 +47,14 @@ other attached packages:
 loaded via a namespace (and not attached):
 [1] Rcpp_0.11.3   stringr_0.6.2 tools_3.1.2  
 ```
+
+
+## Running the code
+
+You will need to have the reshape2 and plyr packages installed and then simply run the run_analysis.R file.  This will: 
+
+
+* download the data set
+* unzip it
+* perform the transformations needed
+* output a text file tidy_dataset.txt in the same directory with the final results
